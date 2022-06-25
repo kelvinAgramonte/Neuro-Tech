@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "layouts.scss"
-    ],
-    "names": [],
-    "file": "layouts.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"layouts.css"}
