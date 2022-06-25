@@ -13,13 +13,11 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 html {
@@ -27,17 +25,14 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 html::-webkit-scrollbar {
   width: 1rem;
 }
-
 html::-webkit-scrollbar-track {
   background: rgba(39, 38, 38, 0.543);
 }
-
 html::-webkit-scrollbar-thumb {
   background: #29d9d5;
 }
@@ -63,12 +58,10 @@ body {
   text-align: center;
   margin-bottom: 2rem;
 }
-
 .heading span {
   color: #29d9d5;
   font-size: 2rem;
 }
-
 .heading h1 {
   font-size: 4rem;
   color: #fff;
@@ -85,7 +78,6 @@ body {
   cursor: pointer;
   background: none;
 }
-
 .btn:hover {
   background: #29d9d5;
   color: #111;
@@ -117,20 +109,15 @@ body {
   position: absolute;
   top: 50%;
   right: 2rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
   z-index: 1500;
   display: none;
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
   height: 8rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -140,27 +127,17 @@ nav {
   width: 5rem;
   height: 5rem;
   background-color: #07baeb;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 110%;
   margin-right: 5rem;
 }
 
 .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .nav-list li {
@@ -178,7 +155,6 @@ nav {
   padding: 0 1.5rem;
   font-size: 1.4rem;
   text-transform: uppercase;
-  -webkit-transition: color 650ms;
   transition: color 650ms;
 }
 
@@ -196,7 +172,6 @@ nav {
   top: 16rem;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 650ms ease;
   transition: all 650ms ease;
 }
 
@@ -210,7 +185,7 @@ nav {
 }
 
 .sub-menu .sub-menu::before {
-  top: .9rem;
+  top: 0.9rem;
   left: -2.5rem;
   border: 1.2rem solid transparent;
   border-right-color: #07dceb;
@@ -246,21 +221,18 @@ li.move-right {
     top: 0;
     left: 0;
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
+    flex-direction: column;
+    align-items: initial;
     display: none;
-    background-color: #000000e2;
+    background-color: rgba(0, 0, 0, 0.8862745098);
     z-index: 1000;
     overflow-y: scroll;
   }
+
   .nav-list > li {
     line-height: 6rem;
   }
+
   .sub-menu {
     position: initial;
     border: 3px solid transparent;
@@ -268,59 +240,56 @@ li.move-right {
     margin-left: 1rem;
     max-height: 0;
   }
+
   .sub-menu::before {
     display: none;
   }
+
   .nav-list li:hover > .sub-menu {
     opacity: 1;
     visibility: visible;
     max-height: initial;
   }
+
   li.move-right {
     margin: 0 auto 0 0;
     line-height: initial;
   }
+
   .menu-icons {
     display: block;
   }
+
   .menu-icons .fa-x {
     display: block;
   }
+
   .menu-icons .fa-x {
     display: none;
   }
+
   nav.active .fa-x {
     display: block;
   }
+
   nav.active .fa-bars {
     display: none;
   }
+
   nav.active .nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 /* =======================================  END: HEADER SECTION ============================================== */
 /* =======================================  START: WAVE SECTION ================================================== */
 .front-background {
   position: relative;
   height: 100vh;
   background: url(img/vitruvian-man.jpg) no-repeat center/cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -328,10 +297,9 @@ h1 {
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background: #ffffff69;
+  background: rgba(255, 255, 255, 0.4117647059);
   padding: 10px 20px;
-  -webkit-box-shadow: 0 0 40px #000;
-          box-shadow: 0 0 40px #000;
+  box-shadow: 0 0 40px #000;
   border-radius: 5px;
 }
 
@@ -350,26 +318,21 @@ h1 {
 
 @-webkit-keyframes moveForever {
   0% {
-    -webkit-transform: translate3d(-90px, 0, 0);
-            transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(85px, 0, 0);
-            transform: translate3d(85px, 0, 0);
+    transform: translate3d(85px, 0, 0);
   }
 }
 
 @keyframes moveForever {
   0% {
-    -webkit-transform: translate3d(-90px, 0, 0);
-            transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(85px, 0, 0);
-            transform: translate3d(85px, 0, 0);
+    transform: translate3d(85px, 0, 0);
   }
 }
-
 .wave use:nth-child(1) {
   -webkit-animation-delay: -2s;
           animation-delay: -2s;
@@ -399,9 +362,9 @@ h1 {
 }
 
 main section {
-  background: black;
+  background: rgb(0, 0, 0);
   padding: 100px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -468,16 +431,10 @@ section p {
 
 .btn-main {
   margin: 2rem 83px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
   font-size: 1.7rem;
   color: #29d9d5;
@@ -486,7 +443,6 @@ section p {
   cursor: pointer;
   background: none;
 }
-
 .btn-main:hover {
   background: #29d9d5;
   color: #111;
@@ -499,15 +455,12 @@ section p {
     height: auto;
   }
 }
-
 /* =======================================  END: RESEARCH SECTION ============================================ */
 /* =======================================  START: FACULTY SECTION ============================================ */
 .faculty {
   margin: 50px auto 100px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 50px;
 }
 
@@ -517,11 +470,9 @@ section p {
   margin: 0 auto;
   background: #333;
   padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
-  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border-radius: 10px;
 }
@@ -532,10 +483,8 @@ section p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1da2ca), color-stop(#2b66bee0), to(#3d0f52));
-  background: linear-gradient(#1da2ca, #2b66bee0, #3d0f52);
+  background: linear-gradient(#1da2ca, rgba(43, 102, 190, 0.8784313725), #3d0f52);
   z-index: 1;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -562,8 +511,7 @@ section p {
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #fff;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .faculty .faculty-card .faculty-content .faculty-details h2 {
@@ -574,7 +522,6 @@ section p {
 .faculty .faculty-card .faculty-content .faculty-details h2 span {
   color: #03a9f4;
   font-size: 14px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -583,15 +530,9 @@ section p {
 }
 
 .faculty-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .faculty-button .span {
@@ -605,7 +546,6 @@ section p {
   cursor: pointer;
   background: none;
 }
-
 .faculty-button .span:hover {
   background: #29d9d5;
   color: #111;
@@ -614,40 +554,27 @@ section p {
 /* =======================================  END: FACULTY SECTION ============================================ */
 /* =======================================  START: STUDENT SECTION ============================================ */
 .student {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: #000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 0rem;
 }
-
 .student .photo-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 2rem;
-          flex: 1 1 2rem;
+  flex: 1 1 2rem;
   padding-bottom: 70px;
 }
-
 .student .photo-container img {
   margin-left: 20px;
   border-radius: 15rem;
   width: 100%;
 }
-
 .student .content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  flex: 1 1 42rem;
   margin-bottom: 5rem;
   padding-left: 40px;
 }
-
 .student .content .span {
   margin-top: 1rem;
   display: inline-block;
@@ -659,25 +586,21 @@ section p {
   cursor: pointer;
   background: none;
 }
-
 .student .content .span:hover {
   background: #29d9d5;
   color: black;
 }
-
 .student .content h3 {
   color: #fff;
   font-size: 4rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
-
 .student .content p {
   padding: 1rem 0;
   font-size: 1.4rem;
-  color: #e7e7e7;
+  color: rgb(231, 231, 231);
   line-height: 2;
 }
-
 .student .content .btn {
   margin: 2rem 1px;
   display: inline-block;
@@ -693,18 +616,12 @@ section p {
 /* =======================================  END: STUDENT SECTION ============================================ */
 /* ======================================= START: REGISTER OPTION =========================================== */
 .registerForm {
-  background: black;
-  display: -ms-grid;
+  background: rgb(0, 0, 0);
   display: grid;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .registerForm h1 {
   text-align: center;
   padding: 50px 0;
@@ -713,7 +630,6 @@ section p {
   background: black;
   font-size: 32px;
 }
-
 .registerForm .btn-register {
   margin: 1rem;
   margin-bottom: 100px;
@@ -726,7 +642,6 @@ section p {
   cursor: pointer;
   background: none;
 }
-
 .registerForm .btn-register:hover {
   background: #29d9d5;
   color: black;
@@ -738,7 +653,6 @@ section p {
   width: 100%;
   position: relative;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#000), to(#07304d));
   background: linear-gradient(to right, #000, #07304d);
   color: #fff;
   padding: 100px 0 30px;
@@ -757,29 +671,20 @@ section p {
   margin: auto;
   color: #fff;
   font-size: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .col {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  flex-basis: 25%;
   padding: 10px;
 }
 
 .col:nth-child(2),
 .col:nth-child(3) {
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
+  flex-basis: 15%;
 }
 
 .col h3 {
@@ -810,15 +715,9 @@ ul li a {
 
 form {
   padding-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #ccc;
   margin-bottom: 50px;
 }
@@ -914,23 +813,20 @@ hr {
     left: 100%;
   }
 }
-
 @media (max-width: 700px) {
   footer {
     bottom: unset;
   }
+
   .col {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    flex-basis: 25%;
   }
+
   .col:nth-child(2),
-  .col:nth-child(3) {
-    -ms-flex-preferred-size: 15%;
-        flex-basis: 15%;
+.col:nth-child(3) {
+    flex-basis: 15%;
   }
 }
-
 /* =======================================  END: FOOTER SECTION ============================================= */
 /* =======================================  START: MEDIA QUERIES ============================================= */
-/* =======================================  END: MEDIA QUERIES ============================================== */
-/*# sourceMappingURL=Academia.css.map */
+/* =======================================  END: MEDIA QUERIES ============================================== *//*# sourceMappingURL=Academia.css.map */
