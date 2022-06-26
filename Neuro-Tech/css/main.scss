@@ -365,13 +365,17 @@
     
     }
 
-    @media screen and (max-width: 1800px) {
+    @media screen and (min-width: 2000px) {
         #particles-js {
-            margin-top: -320px;
+            margin-top: -1000px;
             position: relative;
-            width: 482px;
-            height: 218px;
-            height: 376px;
+            width: 774px;
+            height: 220px;
+            height: 650px;
+        }
+
+        .home-content {
+            height: 35vw;
         }
         
         .home-content span {
@@ -380,17 +384,89 @@
             font-weight: bolder;
             color: transparent;
             -webkit-text-stroke: 0.1rem #fff;
-            font-size: 4vw;
+            font-size: 5vw;
             display: block;
         }
 
         .home-content h3 {
-            font-size: 2vw;
+            font-size: 2.7vw;
             color: #fff;
         }
 
         .home-content p {
-            max-width: 33rem;
+            max-width: 65rem;
+            margin: 1rem auto;
+            font-size: 1vw;
+            line-height: 2;
+        }
+    }
+
+    @media screen and (min-width: 1800px) and (max-width: 2000px) {
+        #particles-js {
+            margin-top: -325px;
+            position: relative;
+            width: 375px;
+            height: 220px;
+            height: 315px;
+        }
+
+        .home-content {
+            height: 35vw;
+        }
+        
+        .home-content span {
+            align-items: center;
+            position: relative;
+            font-weight: bolder;
+            color: transparent;
+            -webkit-text-stroke: 0.1rem #fff;
+            font-size: 5vw;
+            display: block;
+        }
+
+        .home-content h3 {
+            font-size: 2.7vw;
+            color: #fff;
+        }
+
+        .home-content p {
+            max-width: 65rem;
+            margin: 1rem auto;
+            font-size: 1vw;
+            line-height: 2;
+        }
+    }
+
+    @media screen and (min-width: 1501px) and (max-width: 1799px) {
+        #particles-js {
+            margin-top: -325px;
+            position: relative;
+            width: 375px;
+            height: 220px;
+            height: 315px;
+        }
+
+        .home-content {
+            height: 35vw;
+        }
+        
+        .home-content span {
+            align-items: center;
+            position: relative;
+            font-weight: bolder;
+            color: transparent;
+            -webkit-text-stroke: 0.1rem #fff;
+            font-size: 5vw;
+            display: block;
+        }
+
+        .home-content h3 {
+            font-size: 2.7vw;
+            color: #fff;
+        }
+
+        .home-content p {
+            max-width: 65rem;
             margin: 1rem auto;
             font-size: 1vw;
             line-height: 2;
@@ -462,13 +538,17 @@
         }
     }
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (min-width: 1020px) and (max-width: 1100px) {
         #particles-js {
             margin-top: -325px;
             position: relative;
             width: 375px;
             height: 220px;
             height: 315px;
+        }
+
+        .home-content {
+            height: 100vw;
         }
         
         .home-content span {
