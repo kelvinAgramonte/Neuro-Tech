@@ -394,4 +394,15 @@ input[type=submit] {
   color: #000;
   font-size: 18px;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 1400px) {
+  .contact-container {
+    margin: 250px auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .contact-container .row100 .inputBox .line {
+    width: 80%;
+  }
 }/*# sourceMappingURL=contact.css.map */
