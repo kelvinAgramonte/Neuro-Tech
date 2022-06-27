@@ -348,6 +348,66 @@
 
     }
 
+    @media screen and (min-width: 1600px) {
+        
+        .home-content {
+            h6 {
+                font-size: 4vw;
+                color: $white;
+                line-height: 4;
+            }
+        }
+
+        .home-content p {
+            max-width: 60rem;
+            margin: 1rem auto;
+            font-size: 3rem;
+            color: rgb(231, 231, 231);
+            line-height: 2;
+        }
+    }
+
+    @media screen and (min-width: 1055px) and (max-width: 1500px) {
+        
+        .home-content {
+            h6 {
+                font-size: 4vw;
+                color: $white;
+                line-height: 4;
+            }
+        }
+
+        .home-content p {
+            max-width: 60rem;
+            margin: 1rem auto;
+            font-size: 2rem;
+            color: rgb(231, 231, 231);
+            line-height: 2;
+        }
+    }
+
+    @media screen and (min-width: 770px) and (max-width: 1050px) {
+        
+        .home-content {
+            h6 {
+                font-size: 4vw;
+                color: $white;
+                line-height: 4;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        .home-content {
+            h6 {
+                font-size: 6vw;
+                color: $white;
+                line-height: 4;
+            }
+        }
+    }
+
 
 /* =======================================  END: HOME SECTION =============================================== */
 
@@ -618,7 +678,7 @@
     }
     
     .row {
-        width: 85%;
+        width: 95%;
         margin: auto;
         color: $white;
         font-size: 15px;
@@ -755,7 +815,7 @@
             bottom: unset;
         }
         .col {
-            flex-basis: 25%;
+            flex-basis: 60%;
         }
         .col:nth-child(2), .col:nth-child(3) {
             flex-basis: 15%;
