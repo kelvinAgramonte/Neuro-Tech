@@ -407,10 +407,10 @@
         position: relative;
         display: inline-block;
         color: #111;
-        padding: 10px 20px;
+        padding: 30px 20px;
         border-radius: 10px;
         background-color: #fff;
-        margin-top: 25px;
+        margin-top: 105px;
         text-decoration: none;
         font-size: 15px;
     }
@@ -477,7 +477,40 @@
         }
     }
 
-    @media (max-width: 420px) {
+    @media (min-width: 425px) and (max-width: 500px) {
+
+        .card {
+            position: relative;
+            width: 410px;
+            /* max-width: 631px; */
+            transition: 0.5s;
+            align-items: flex-start;
+            margin: 120px 0px 0px 8px;
+        }
+    }
+
+    @media (min-width: 375px) and (max-width: 424px) {
+
+        .card {
+            position: relative;
+            width: 355px;
+            /* max-width: 631px; */
+            transition: 0.5s;
+            align-items: flex-start;
+            margin: 120px 0px 0px 8px;
+        }
+    }
+
+    @media (max-width: 370px) {
+
+        .card {
+            position: relative;
+            width: 304px;
+            /* max-width: 631px; */
+            transition: 0.5s;
+            align-items: flex-start;
+            margin: 120px 0px 0px 8px;
+        }
 
         .card .content {
             padding: 30px;
