@@ -285,7 +285,7 @@ li.move-right {
 .front-background {
   position: relative;
   height: 100vh;
-  background: url(img/vitruvian-man.jpg) no-repeat center/cover;
+  background: url(img/AOT.jfif) no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -363,7 +363,7 @@ h1 {
 
 main section {
   background: rgb(0, 0, 0);
-  padding: 100px;
+  padding: 20px;
   color: rgb(255, 255, 255);
 }
 
@@ -448,11 +448,30 @@ section p {
   color: #111;
 }
 
-@media (max-width: 1024px) {
-  .Photo-Responsive {
+@media screen and (max-width: 1000px) {
+  .Professor-Thesis {
+    background: #000;
+    position: relative;
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    padding: 0px;
+  }
+
+  .circle.circle1 {
+    width: 259px;
+    height: 238px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+  }
+
+  .circle.circle2 {
+    width: 237px;
+    height: 226px;
+    float: right;
+    border-radius: 50%;
+    margin: 25px;
+    shape-outside: circle();
   }
 }
 /* =======================================  END: RESEARCH SECTION ============================================ */
@@ -462,19 +481,6 @@ section p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 50px;
-}
-
-.faculty .faculty-card {
-  position: relative;
-  width: 350px;
-  margin: 0 auto;
-  background: #333;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  border-radius: 10px;
 }
 
 .faculty .faculty-card .faculty-layer {
@@ -551,6 +557,42 @@ section p {
   color: #111;
 }
 
+@media screen and (min-width: 371px) {
+  .faculty .faculty-card {
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    background: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .faculty {
+    margin: 50px auto 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 50px;
+    justify-content: space-evenly;
+  }
+
+  .faculty .faculty-card {
+    position: relative;
+    width: 285px;
+    margin: 0 auto;
+    background: #333;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+}
 /* =======================================  END: FACULTY SECTION ============================================ */
 /* =======================================  START: STUDENT SECTION ============================================ */
 .student {
@@ -566,7 +608,7 @@ section p {
   padding-bottom: 70px;
 }
 .student .photo-container img {
-  margin-left: 20px;
+  margin-left: 0px;
   border-radius: 15rem;
   width: 100%;
 }
